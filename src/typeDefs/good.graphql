@@ -1,0 +1,130 @@
+"""
+商品
+"""
+type good {
+  id: Int
+  """
+  商品编号
+  """
+  type: GoodType
+  """
+  商品类型
+  """
+  goodsNum: String
+  """
+  商品名称
+  """
+  name: String
+  """
+  商品图片
+  """
+  image: String
+  """
+  商品描述
+  """
+  desc: String
+  """
+  商品简介
+  """
+  summary: String
+  # """
+  # 商品类型 1audioBook有声书 2videoBook视频读书 3bookClub大咖领读 4course课程 5package畅享包 6ebook电子书 7globalSummaryBook极简全球阅读 8charge充值 9summaryAudioBook好书快听 10globalSummaryAudioBook阅读时差 11bundle组合商品
+  # """
+  # type: GoodType
+  """
+  相关资源ID
+  """
+  resId: Int
+  """
+  关联作者
+  """
+  resAuthor: String
+  """
+  图书作者
+  """
+  bookAuthor: String
+  """
+  是否免费
+  """
+  isFree: Boolean
+  """
+  是否只允许中国大陆购买
+  """
+  isOnlyMainland: Boolean
+  """
+  点赞总数
+  """
+  likeCount: Int
+  """
+  创建时间
+  """
+  createTime: Int
+  """
+  上架时间
+  """
+  onlineTime: Int
+  """
+  放到栏目的时间，只有近期更新和往期回顾有
+  """
+  sectionOnlineTime: Int
+  """
+  电子书免费章节
+  """
+  freeChapter: Int
+  """
+  是否已完结
+  """
+  isFinished: Boolean
+  """
+  预计完成时间
+  """
+  endDate: String
+  """
+  上否上架
+  """
+  isOnline: Boolean
+  # """
+  # 图书详情
+  # """
+  # book: Book
+  # """
+  # 价格信息
+  # """
+  # price: Price
+  # """
+  # 畅享包商品信息 仅当type为package
+  # """
+  # packageDuration: PackageDuration
+  # """
+  # 有声书详情 仅当商品类型为audioBook
+  # """
+  # audioBook: AudioBook
+  # """
+  # 好书快听阅读时差详情 仅当商品类型为summaryAudioBook或globalSummaryAudioBook
+  # """
+  # summaryAudioBook: SummaryAudioBook
+  # """
+  # 极简全球阅读详情 仅当商品类型为globalSummaryBook
+  # """
+  # summaryBook: SummaryBook
+  # """
+  # 大咖领读详情 仅当商品类型为bookClub
+  # """
+  # bookClub: BookClub
+  # """
+  # 课程详情 仅当商品类型为course
+  # """
+  # course: Course
+  # """
+  # 相关商品
+  # """
+  # relatedGoods(random: Int = 3): [Good]
+  # """
+  # 组合商品包含商品列表
+  # """
+  # bundleUserGoods: [UserGood]
+  # """
+  # 分页信息
+  # """
+  # pageInfo: PageInfo
+}

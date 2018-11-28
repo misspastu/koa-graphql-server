@@ -1,0 +1,6 @@
+type store {
+  store_id: Int
+  store_name: String
+  store_address: String
+  store_image: String
+}

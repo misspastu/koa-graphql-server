@@ -3,7 +3,9 @@
   "plugins": [
     ["module-resolver", {
       "alias": {
-        "schema": "./src/schema"
+        "schema": "./src/schema",
+        "typeDefs": "./src/typeDefs",
+        "resolvers": "./src/resolvers"
       }
     }]
   ]

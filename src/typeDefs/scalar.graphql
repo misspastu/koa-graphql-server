@@ -1,0 +1,5 @@
+"""
+商品类型
+"""
+scalar GoodType
+scalar SectionType

@@ -1,0 +1,14 @@
+type Query {
+  """
+  商品信息
+  """
+  good(id:Int): good,
+  """
+  店铺信息
+  """
+  store:good,
+  """
+  数据信息
+  """
+  type:GoodType
+}

@@ -1,0 +1,14 @@
+{
+  "hosts": {
+  },
+  "server": {
+    "port": 3000
+  },
+  "db": {
+    "database": "yunpub-zxsy-test",
+    "host": "10.31.90.16",
+    "port": 3306,
+    "username": "zxu_mysql",
+    "password": "123!@#qweQWE"
+  }
+}

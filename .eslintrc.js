@@ -1,5 +1,6 @@
 module.exports = {
-  extends: ['eslint:recommended', 'airbnb-base'],
+  // extends: ['eslint:recommended', 'airbnb-base'],
+  extends: ['eslint:recommended'],
   parser: 'babel-eslint',
   plugins: ['import'],
   settings: {
@@ -9,9 +10,26 @@ module.exports = {
   },
   env: {
     node: true,
+    es6: true
   },
   rules: {
-    'no-console': 0
-    // Additional, per-project rules...
-  }
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+        "error",
+        "unix"
+    ],
+    "quotes": [
+        "error",
+        "single"
+    ],
+    "semi": [
+        "error",
+        "never"
+    ],
+    "no-console": 0,
+    "comma-dangle": 0
+    }
 }
